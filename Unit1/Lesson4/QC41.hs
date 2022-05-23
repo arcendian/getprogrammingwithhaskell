@@ -1,0 +1,2 @@
+-- Quick check 4.1: Write a lambda function for cubing x and pass it to ifEven
+-- ifEven (\x -> x ^ 3) 2  -- run in GHCI
