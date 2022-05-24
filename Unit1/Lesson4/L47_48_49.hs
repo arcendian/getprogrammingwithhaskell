@@ -1,4 +1,5 @@
 -- Listing 4.7: sfOffice, nyOffice, renoOffice
+sfOffice :: (String, String) -> String
 sfOffice name =
   if lastName < "L"
     then nameText ++ " - PO Box 1234 - San Francisco, CA, 9411"
@@ -18,6 +19,7 @@ renoOffice name = nameText ++ " - PO Box 456 - Reno, NV 89523"
     nameText = snd name
 
 -- Listing 4.8: getLocationFuntion
+-- TODO: How to properly write type signature for this function?
 getLocationFunction location = case location of
   "ny" -> nyOffice
   "sf" -> sfOffice

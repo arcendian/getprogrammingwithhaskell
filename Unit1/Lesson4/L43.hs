@@ -1,4 +1,5 @@
 -- Listing 4.3: ifEven
+ifEven :: Integral a => (a -> a) -> a -> a
 ifEven myFunction x =
   if even x
     then myFunction x

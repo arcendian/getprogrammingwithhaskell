@@ -9,6 +9,7 @@
 --            in x
 
 -- Quick check 3.3: Redefine overwrite by using only lambdas
+overwrite :: Num a => a -> a
 overwrite x =
   ( \x ->
       ( \x ->

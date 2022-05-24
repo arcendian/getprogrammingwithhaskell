@@ -4,6 +4,7 @@
 -- that are the same but with different first names. Modify the
 -- compareLastNames function to compare first names and use it to fix
 -- compareLastNames.
+compareLastNames :: (String, String) -> (String, String) -> Ordering
 compareLastNames name1 name2
   | lastName1 > lastName2 = GT
   | lastName1 < lastName2 = LT
